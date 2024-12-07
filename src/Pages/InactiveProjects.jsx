@@ -16,7 +16,7 @@ function InactiveProjects() {
 
   // Fetch Projects function
   const getProjects = async () => {
-    let apiUrl = "http://localhost:3000/api/projects/inactiveprojects";
+    let apiUrl = "https://pf-express-production.up.railway.app/api/projects/inactiveprojects";
 
     try {
       const response = await axios.get(apiUrl, {
@@ -40,7 +40,7 @@ function InactiveProjects() {
 
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/auth/user",
+          "https://pf-express-production.up.railway.app/api/auth/user",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

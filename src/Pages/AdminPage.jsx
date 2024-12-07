@@ -24,7 +24,7 @@ function AdminPage() {
           return;
         }
 
-        const response = await axios.get("http://localhost:3000/api/auth/admin", {
+        const response = await axios.get("https://pf-express-production.up.railway.app/api/auth/admin", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setData(response.data);

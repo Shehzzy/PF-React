@@ -25,7 +25,7 @@ function ProjectTable({
       return;
     }
     try {
-      let apiUrl = "http://localhost:3000/api/projects/activateproject";
+      let apiUrl = "https://pf-express-production.up.railway.app/api/projects/activateproject";
       const response = await axios.put(
         `${apiUrl}/${projectId}`,
         {},
@@ -52,7 +52,7 @@ function ProjectTable({
       return;
     }
     try {
-      let apiUrl = "http://localhost:3000/api/projects/deactivateproject";
+      let apiUrl = "https://pf-express-production.up.railway.app/api/projects/deactivateproject";
       const response = await axios.put(
         `${apiUrl}/${projectId}`,
         {},

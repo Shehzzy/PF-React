@@ -25,7 +25,7 @@ function Home() {
 
 // fetch all count api 
   const getCountAllProjects = async () => {
-    const resp = await axios.get("http://localhost:3000/api/projects/countallprojects", {
+    const resp = await axios.get("https://pf-express-production.up.railway.app/api/projects/countallprojects", {
       headers:{Authorization: `Bearer ${token}`}
     });
 
@@ -34,7 +34,7 @@ function Home() {
 
   // fetch active count api 
   const getCountActiveProjects = async () => {
-    const resp = await axios.get("http://localhost:3000/api/projects/countactiveprojects", {
+    const resp = await axios.get("https://pf-express-production.up.railway.app/api/projects/countactiveprojects", {
       headers:{Authorization: `Bearer ${token}`}
     });
 
@@ -43,7 +43,7 @@ function Home() {
 
   // fetch inactive count api 
   const getCountInActiveProjects = async () => {
-    const resp = await axios.get("http://localhost:3000/api/projects/countinactiveprojects", {
+    const resp = await axios.get("https://pf-express-production.up.railway.app/api/projects/countinactiveprojects", {
       headers:{Authorization: `Bearer ${token}`}
     });
 
@@ -59,7 +59,7 @@ function Home() {
       }
 
       try {
-        const response = await axios.get("http://localhost:3000/api/auth/user", {
+        const response = await axios.get("https://pf-express-production.up.railway.app/api/auth/user", {
           headers: { Authorization: `Bearer ${token}` }
         });
         setUser(response.data);

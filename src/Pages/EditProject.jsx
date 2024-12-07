@@ -38,7 +38,7 @@ function EditProject() {
     const fetchProject = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/projects/getSingleProject/${id}`,
+          `https://pf-express-production.up.railway.app/api/projects/getSingleProject/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -118,7 +118,7 @@ function EditProject() {
 
     try {
       const response = await axios.put(
-        `http://localhost:3000/api/projects/updateproject/${id}`,
+        `https://pf-express-production.up.railway.app/api/projects/updateproject/${id}`,
         formPayload,
         {
           headers: {

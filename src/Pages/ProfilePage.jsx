@@ -16,7 +16,7 @@ function ProfilePage() {
       }
 
       try {
-        const response = await axios.get("http://localhost:3000/api/auth/user", {
+        const response = await axios.get("https://pf-express-production.up.railway.app/api/auth/user", {
           headers: { Authorization: `Bearer ${token}` }
         });
         setUser(response.data);

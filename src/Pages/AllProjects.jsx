@@ -20,11 +20,11 @@ function AllProjects() {
 
   // Fetch Projects function
   const getProjects = async (filter) => {
-    let apiUrl = "http://localhost:3000/api/projects/projects"; // Default for 'all' projects
+    let apiUrl = "https://pf-express-production.up.railway.app/api/projects/projects"; // Default for 'all' projects
     if (filter === "active") {
-      apiUrl = "http://localhost:3000/api/projects/activeprojects";
+      apiUrl = "https://pf-express-production.up.railway.app/api/projects/activeprojects";
     } else if (filter === "inactive") {
-      apiUrl = "http://localhost:3000/api/projects/inactiveprojects";
+      apiUrl = "https://pf-express-production.up.railway.app/api/projects/inactiveprojects";
     }
 
     try {
@@ -49,7 +49,7 @@ function AllProjects() {
 
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/auth/user",
+          "https://pf-express-production.up.railway.app/api/auth/user",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
