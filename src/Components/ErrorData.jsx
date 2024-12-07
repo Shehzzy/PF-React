@@ -1,5 +1,5 @@
 import React from "react";
-import NoResults from '../assets/Error.png';
+import NoResults from '../assets/error.png';
 import { useNavigate } from "react-router-dom";
 
 function ErrorData() {
